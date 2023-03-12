@@ -55,7 +55,7 @@ public class MovieH2Service implements MovieRepository{
     @Override
     public void deleteMovie(int movieId){
         try{
-        db.update("delete from movieList where id = ?", movieId);  
+        db.update("delete from movieList where movieId = ?", movieId);  
         }
         catch (Exception e){
 
